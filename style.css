@@ -1,0 +1,59 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    /* Using Serif to match the classic receipt typography */
+    font-family: "Times New Roman", Times, serif; 
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    line-height: 1.3;
+}
+
+.receipt-container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    padding: 10px;
+    /* This makes all text inside the container bold */
+    font-weight: bold; 
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    /* Updated from 400 to bold to match your request */
+    font-weight: bold; 
+}
+
+.receipt-details p {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+    /* Ensuring all p tags are explicitly bold */
+    font-weight: bold;
+}
+
+/* Styling for the Enterprise name at the bottom */
+.bold-text {
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .receipt-details p {
+        font-size: 1.3rem;
+    }
+}
